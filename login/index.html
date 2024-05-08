@@ -29,7 +29,7 @@
 							<input type="password" style="" class="inpbox" id="password" name="password" required>
 						</div>
 						<div style="padding-top: 15px"></div>
-						<div><input type="submit" value="登录" class="slog"></div>
+						<div><input type="submit" value="登录" class="slog" onClick="turnto('/files/host/')"></div>
 					</form>
 					<script>
 							document.getElementById("loginbs").addEventListener("submit", function(event) {
@@ -38,8 +38,13 @@
   
 							if (username === "host" || password === "password") {
 								alert("Next:");
-								window.location.href = '/files/host/'
-							}
+								<script>
+									function turnto(url) {
+										window.location.href = url;
+									}
+								</script>
+							}else{
+								alert("False");
 							});
 						</script>
 					<div>
