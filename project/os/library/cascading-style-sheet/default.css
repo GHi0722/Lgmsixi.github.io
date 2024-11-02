@@ -3,6 +3,7 @@
 body{
 	background-image: url("https://bing.img.run/uhd.php");
 	background-size: cover;
+	overflow: hidden;
 }
 .osca{
 	position: absolute;
